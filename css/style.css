@@ -15,11 +15,14 @@
 body {
   font-family: 'Noto Sans KR', sans-serif;
   box-sizing: border-box;
+  background-color: var(--color-main);
+  color: var(--color-white);
+  padding-top: 2.5em;
 }
 
 a {
   text-decoration: none;
-  color: var(--color-black);
+  color: var(--color-white);
 }
 
 ul {
@@ -36,7 +39,7 @@ ul {
 }
 
 .nav {
-  width: 70%;
+  width: 60%;
   border: 2px solid var(--color-point);
   border-radius: 8px;
 }
@@ -49,6 +52,39 @@ ul {
 .nav__item {
   font-weight: var(--font-bold);
   color: var(--color-point);
+}
+
+/* home */
+#home {
+  padding: 6em 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home__title {
+  font-size: 2.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.home__title__line {
+  position: relative;
+  margin: 12px 0px;
+}
+
+.home__title__line::after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  height: 12px;
+  width: 100%;
+  background-color: var(--color-point);
+}
+.home__description {
+  line-height: 2em;
 }
 
 /* 임시 */
