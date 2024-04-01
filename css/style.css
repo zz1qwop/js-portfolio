@@ -1,0 +1,57 @@
+:root {
+  --color-main: #0a062d;
+  --color-sub: #1a182c;
+  --color-point: #f31474;
+  --color-point-sub: #28daee;
+  --color-white: #ffffff;
+  --color-light-gray: #e9e9e9;
+  --color-black: #000000;
+
+  /* font weigiht */
+  --font-bold: 700;
+  --font-light: 200;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* header - nav */
+#header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  width: 70%;
+  border: 2px solid var(--color-point);
+  border-radius: 8px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__item {
+  font-weight: var(--font-bold);
+  color: var(--color-point);
+}
+
+/* 임시 */
+img {
+  width: 500px;
+}
