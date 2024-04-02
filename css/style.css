@@ -12,6 +12,10 @@
   --font-light: 200;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Noto Sans KR', sans-serif;
   box-sizing: border-box;
@@ -84,8 +88,12 @@ ul {
 
 .nav__item {
   font-weight: var(--font-bold);
-  color: var(--color-point);
   text-shadow: 1px 0px 9px rgba(7, 4, 37, 0.61);
+}
+
+.nav__item:hover {
+  color: var(--color-point);
+  text-shadow: 1px 0px 9px rgba(234, 61, 162, 0.826);
 }
 
 /* home */
