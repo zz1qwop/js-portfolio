@@ -344,3 +344,15 @@ ul {
 .contact__divider .shape-fill {
   fill: var(--color-main);
 }
+
+/* scroll animation */
+.scroll__item {
+  transform: translateY(20px);
+  transition: all 350ms ease-in;
+  opacity: 0.3;
+}
+
+.scroll-in {
+  transform: translateY(0px);
+  opacity: 1;
+}
