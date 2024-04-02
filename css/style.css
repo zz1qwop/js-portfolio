@@ -47,6 +47,17 @@ ul {
   padding: 0em 1em;
 }
 
+/* animation */
+@keyframes backgroundAnimation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+    filter: brightness(1.2);
+  }
+}
+
 /* header - nav */
 #header {
   position: fixed;
@@ -111,7 +122,19 @@ ul {
 }
 
 .home__description {
+  position: relative;
   line-height: 2em;
+}
+
+.home__description::after {
+  content: '';
+  position: absolute;
+  right: 0px;
+  bottom: -0.5em;
+  height: 8px;
+  width: 0%;
+  background-color: var(--color-point);
+  animation: 5s infinite alternate backgroundAnimation;
 }
 
 .home__divider {
