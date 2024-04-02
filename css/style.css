@@ -1,6 +1,6 @@
 :root {
-  --color-main: #0a062d;
-  --color-sub: #1a182c;
+  --color-main: #070425;
+  --color-sub: #15132b;
   --color-point: #f31474;
   --color-point-sub: #28daee;
   --color-white: #ffffff;
@@ -38,18 +38,32 @@ ul {
   padding-bottom: 1.5em;
 }
 
+.section__description {
+  font-size: 1em;
+  font-weight: var(--font-light);
+}
+
+.section__description__icon {
+  padding: 0em 1em;
+}
+
 /* header - nav */
 #header {
   position: fixed;
   width: 100%;
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
 
 .nav {
   width: 60%;
   border: 2px solid var(--color-point);
   border-radius: 8px;
+  backdrop-filter: blur(2px);
+  box-shadow: 0px 1px 8px 0px rgba(243, 20, 116, 0.75);
+  -webkit-box-shadow: 0px 1px 8px 0px rgba(243, 20, 116, 0.75);
+  -moz-box-shadow: 0px 1px 8px 0px rgba(243, 20, 116, 0.75);
 }
 
 .nav__list {
@@ -60,14 +74,17 @@ ul {
 .nav__item {
   font-weight: var(--font-bold);
   color: var(--color-point);
+  text-shadow: 1px 0px 9px rgba(7, 4, 37, 0.61);
 }
 
 /* home */
 #home {
-  padding: 8em 1em;
+  padding: 8em 1em 14em 1em;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: relative;
+  z-index: 0;
 }
 
 .home__title {
@@ -79,10 +96,10 @@ ul {
 .home__title__line {
   position: relative;
   margin: 12px 0px;
+  z-index: 2;
 }
 
 .home__title__line::after {
-  z-index: -1;
   content: '';
   position: absolute;
   left: 0px;
@@ -90,15 +107,38 @@ ul {
   height: 12px;
   width: 100%;
   background-color: var(--color-point);
+  z-index: -1;
 }
+
 .home__description {
   line-height: 2em;
+}
+
+.home__divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.home__divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 92px;
+}
+
+.home__divider .shape-fill {
+  fill: var(--color-sub);
 }
 
 /* skills */
 #skills {
   background-color: var(--color-sub);
-  padding: 4em;
+  padding: 7em;
 }
 
 .skills__container {
@@ -118,15 +158,30 @@ ul {
   -webkit-box-shadow: 0px 1px 8px 0px rgba(243, 20, 116, 0.75);
   -moz-box-shadow: 0px 1px 8px 0px rgba(243, 20, 116, 0.75);
 }
+.skills__item {
+  line-height: 2em;
+}
+
+.skills__item__strong {
+  color: var(--color-point);
+}
 
 /* projects */
 #projects {
-  padding: 4em;
+  position: relative;
+  padding: 7em 0em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects__list {
+  width: 100%;
 }
 
 .project {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-bottom: 4em;
 }
 
@@ -140,6 +195,10 @@ ul {
   border-radius: 8px;
 }
 
+.project:nth-child(even) .project__img {
+  margin-left: 1.5em;
+}
+
 .project__description {
   display: flex;
   flex-direction: column;
@@ -150,14 +209,30 @@ ul {
 .project__title {
   margin: 0px;
   font-size: 1.5em;
+  position: relative;
+}
+
+.project__title::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  height: 6px;
+  width: 100%;
+  background-color: var(--color-point);
+  z-index: -1;
 }
 
 .project__skills {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
   font-size: 1.3em;
+}
+
+.project__skills__icon {
+  color: var(--color-point-sub);
 }
 
 .project__function {
@@ -165,10 +240,21 @@ ul {
   margin-bottom: 0.5em;
 }
 
+.project__function:nth-last-child(1) {
+  margin-top: 0.5em;
+  padding-top: 0.5em;
+  border-top: 1px solid var(--color-point);
+}
+
+.project__func__icon {
+  color: var(--color-point);
+}
+
 /* contact */
 #contact {
+  position: relative;
   background-color: var(--color-sub);
-  padding: 4em;
+  padding: 6em;
 }
 
 .section__info {
@@ -202,4 +288,28 @@ ul {
 .section__icon:hover {
   color: var(--color-point);
   transform: scale(1.2) rotate(15deg);
+}
+
+.section__divider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.section__divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 75px;
+}
+
+.section__divider .shape-fill {
+  fill: var(--color-sub);
+}
+
+.contact__divider .shape-fill {
+  fill: var(--color-main);
 }

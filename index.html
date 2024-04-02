@@ -51,6 +51,19 @@
           협업하기 좋은 코드를 제공하는 개발자가 되겠습니다. <br />
           UI/UX에 가치를 두며 계속 공부해나가고 있습니다.
         </p>
+        <div class="home__divider">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
       </section>
       <!-- Skills -->
       <section id="skills">
@@ -58,109 +71,150 @@
         <div class="skills__container">
           <ul class="skills__list">
             <li class="skills__item">
-              HTML | 웹 표준과 웹 접근성을 고려하며, 시맨틱 마크업이 가능합니다.
+              <strong class="skills__item__strong">HTML</strong> | 웹 표준과 웹
+              접근성을 고려하며, 시맨틱 마크업이 가능합니다.
             </li>
             <li class="skills__item">
-              CSS | 반응형 CSS 구현이 가능하고 CSS Module, TailwindCSS를 사용할
-              수 있습니다.
+              <strong class="skills__item__strong">CSS</strong> | 반응형 CSS
+              구현이 가능하고 CSS Module, TailwindCSS를 사용할 수 있습니다.
             </li>
             <li class="skills__item">
-              JavaScript | ES6 문법에 익숙하며 비동기 작업을 할 수 있습니다.
+              <strong class="skills__item__strong">JavaScript</strong> | ES6
+              문법에 익숙하며 비동기 작업을 할 수 있습니다.
             </li>
             <li class="skills__item">
-              TypeScript | 타입과 인터페이스를 사용할 수 있습니다.
+              <strong class="skills__item__strong">TypeScript</strong> | 타입과
+              인터페이스를 사용할 수 있습니다.
             </li>
             <li class="skills__item">
-              React | Hooks와 Context를 알고 있고 React Query를 사용합니다.
+              <strong class="skills__item__strong">React</strong> | Hooks와
+              Context를 알고 있고 React Query를 사용합니다.
             </li>
           </ul>
           <ul class="skills__list">
             <li class="skills__item">
-              Git | Git으로 협업을 해 본 경험이 있습니다.
+              <strong class="skills__item__strong">Git</strong> | Git으로 협업을
+              해 본 경험이 있습니다.
             </li>
             <li class="skills__item">
-              Notion | 협업 시 Notion으로 일정 관리를 했습니다.
+              <strong class="skills__item__strong">Notion</strong> | 협업 시
+              Notion으로 일정 관리를 했습니다.
             </li>
             <li class="skills__item">
-              Slack | 협업 시 Slack을 이용해 할 일을 관리했습니다.
+              <strong class="skills__item__strong">Slack</strong> | 협업 시
+              Slack을 이용해 할 일을 관리했습니다.
             </li>
           </ul>
         </div>
       </section>
       <!-- Projects -->
       <section id="projects">
+        <div class="section__divider">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M649.97 0L550.03 0 599.91 54.12 649.97 0z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
         <h2 class="section__title">Projects</h2>
+        <h3 class="section__description">
+          <i class="section__description__icon fa-solid fa-arrow-down"></i
+          >이미지를 클릭하면 해당 프로젝트의 깃허브로 이동합니다.<i
+            class="section__description__icon fa-solid fa-arrow-down"
+          ></i>
+        </h3>
         <ul class="projects__list">
           <li class="project">
-            <a href="https://wondrous-kringle-c6e8e6.netlify.app/">
+            <a href="https://github.com/zz1qwop/ts-mini-game">
               <img
-                src="imgs/projects/calendar.JPG"
-                alt="react calendar project"
+                src="imgs/projects/ts_game.JPG"
+                alt="react and TypeScript initial game project"
                 class="project__img"
               />
             </a>
             <div class="project__description">
-              <h3 class="project__title">캘린더 프로젝트</h3>
+              <h3 class="project__title">초성 게임 프로젝트</h3>
               <div class="project__skills">
-                <p><i class="fa-brands fa-react"></i> React</p>
-                <p><i class="fa-brands fa-js"></i> JavaScript</p>
+                <p>
+                  <i class="project__skills__icon fa-brands fa-react"></i> React
+                </p>
+                <p>
+                  <i class="project__skills__icon fa-solid fa-t"></i>
+                  TypeScript
+                </p>
               </div>
               <ul>
                 <li class="project__function">
-                  <i class="fa-solid fa-check"></i> localStorage, useState를
-                  통한 일정 관리하기
+                  <i class="project__func__icon fa-solid fa-check"></i>
+                  게임을 진행할 랜덤 초성 변경하기
                 </li>
                 <li class="project__function">
-                  <i class="fa-solid fa-check"></i> Context를 이용한 색상 테마
-                  변경
+                  <i class="project__func__icon fa-solid fa-check"></i>
+                  useRef를 사용하여 단어 제출하기
                 </li>
                 <li class="project__function">
-                  <i class="fa-solid fa-check"></i> 반응형 CSS
+                  <i class="project__func__icon fa-solid fa-check"></i>
+                  useEffect, setInterval으로 구현한 타이머
                 </li>
                 <li class="project__function">
-                  기존에 만들어져있는 컴포넌트(캘린더 라이브러리)의 CSS를
-                  수정해보는 <br />경험을 했으며 useEffect를 적절히 사용할 수
-                  있었습니다.
+                  TypeScript를 사용하여 변수들을 효율적으로 사용할 수
+                  있었습니다.<br />TypeScript에서는 컴포넌트의 props 타입을
+                  선언할 수 있어<br />컴포넌트를 사용할 때 props를 헷갈리지 않고
+                  작성할 수 있었습니다.
                 </li>
               </ul>
             </div>
           </li>
           <li class="project">
-            <a href="https://wondrous-kringle-c6e8e6.netlify.app/">
+            <a href="https://github.com/zz1qwop/react-ticket">
               <img
-                src="imgs/projects/calendar.JPG"
-                alt="react calendar project"
+                src="imgs/projects/ticket.JPG"
+                alt="react ticket reservation project"
                 class="project__img"
               />
             </a>
             <div class="project__description">
-              <h3 class="project__title">캘린더 프로젝트</h3>
+              <h3 class="project__title">티켓 예매 사이트</h3>
               <div class="project__skills">
-                <p><i class="fa-brands fa-react"></i> React</p>
-                <p><i class="fa-brands fa-js"></i> JavaScript</p>
+                <p>
+                  <i class="project__skills__icon fa-brands fa-react"></i> React
+                </p>
+                <p>
+                  <i class="project__skills__icon fa-brands fa-js"></i>
+                  JavaScript
+                </p>
               </div>
               <ul>
                 <li class="project__function">
-                  <i class="fa-solid fa-check"></i> localStorage, useState를
-                  통한 일정 관리하기
+                  <i class="project__func__icon fa-solid fa-check"></i>
+                  firebase 인증을 사용한 로그인 및 회원가입
                 </li>
                 <li class="project__function">
-                  <i class="fa-solid fa-check"></i> Context를 이용한 색상 테마
-                  변경
+                  <i class="project__func__icon fa-solid fa-check"></i>
+                  firebase 실시간 데이터베이스, React Query를 사용한<br />&nbsp;&nbsp;&nbsp;&nbsp;공연
+                  목록 보기, 티켓 예매하기, 예매 취소하기 기능
                 </li>
                 <li class="project__function">
-                  <i class="fa-solid fa-check"></i> 반응형 CSS
+                  <i class="project__func__icon fa-solid fa-check"></i> 반응형
+                  CSS
                 </li>
                 <li class="project__function">
-                  기존에 만들어져있는 컴포넌트(캘린더 라이브러리)의 CSS를
-                  수정해보는 <br />경험을 했으며 useEffect를 적절히 사용할 수
-                  있었습니다.
+                  데이터를 어떤 조합으로 요청할지,<br />
+                  데이터베이스에는 데이터를 어떤 구조로 저장할지 고민해 볼 수
+                  있었습니다.<br />useQuery, useMutation을 어느 상황에 써야
+                  하는지 배우게 되었습니다.
                 </li>
               </ul>
             </div>
           </li>
           <li class="project">
-            <a href="https://wondrous-kringle-c6e8e6.netlify.app/">
+            <a href="https://github.com/zz1qwop/calendar">
               <img
                 src="imgs/projects/calendar.JPG"
                 alt="react calendar project"
@@ -170,20 +224,26 @@
             <div class="project__description">
               <h3 class="project__title">캘린더 프로젝트</h3>
               <div class="project__skills">
-                <p><i class="fa-brands fa-react"></i> React</p>
-                <p><i class="fa-brands fa-js"></i> JavaScript</p>
+                <p>
+                  <i class="project__skills__icon fa-brands fa-react"></i> React
+                </p>
+                <p>
+                  <i class="project__skills__icon fa-brands fa-js"></i>
+                  JavaScript
+                </p>
               </div>
               <ul>
                 <li class="project__function">
-                  <i class="fa-solid fa-check"></i> localStorage, useState를
-                  통한 일정 관리하기
+                  <i class="project__func__icon fa-solid fa-check"></i>
+                  localStorage, useState를 통한 일정 관리하기
                 </li>
                 <li class="project__function">
-                  <i class="fa-solid fa-check"></i> Context를 이용한 색상 테마
-                  변경
+                  <i class="project__func__icon fa-solid fa-check"></i>
+                  Context를 이용한 색상 테마 변경
                 </li>
                 <li class="project__function">
-                  <i class="fa-solid fa-check"></i> 반응형 CSS
+                  <i class="project__func__icon fa-solid fa-check"></i> 반응형
+                  CSS
                 </li>
                 <li class="project__function">
                   기존에 만들어져있는 컴포넌트(캘린더 라이브러리)의 CSS를
@@ -198,6 +258,19 @@
     </main>
     <!-- Footer -->
     <footer id="contact">
+      <div class="section__divider contact__divider">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M649.97 0L550.03 0 599.91 54.12 649.97 0z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
       <h2 class="section__title">Contact</h2>
       <div class="section__info">
         <p class="section__email">zz1qwop@gmail.com</p>
