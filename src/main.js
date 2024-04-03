@@ -2,7 +2,7 @@
 
 const callback = (entries, observer) => {
   entries.forEach((entry) => {
-    if (entry.isIntersecting) {
+    if (entry.isIntersecting && entry.intersectionRatio >= 0.3) {
       entry.target.classList.add('scroll-in');
     } else {
       entry.target.classList.remove('scroll-in');
@@ -10,7 +10,7 @@ const callback = (entries, observer) => {
   });
 };
 const option = {
-  threshold: 0.3,
+  threshold: [0.3],
 };
 
 const observer = new IntersectionObserver(callback, option);

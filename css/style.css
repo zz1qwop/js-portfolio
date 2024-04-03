@@ -351,13 +351,13 @@ ul {
 
 /* scroll animation */
 .scroll__item {
-  transform: translateY(20px);
+  transform: scale(0.97);
   transition: all 350ms ease-in;
   opacity: 0.3;
 }
 
 .scroll-in {
-  transform: translateY(0px);
+  transform: scale(1);
   opacity: 1;
 }
 
