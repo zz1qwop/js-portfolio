@@ -213,6 +213,7 @@ ul {
 .project {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 4em;
 }
 
@@ -220,9 +221,12 @@ ul {
   flex-direction: row-reverse;
 }
 
-.project__img {
-  width: 600px;
+.project__link {
+  width: 40%;
   margin-right: 1.5em;
+}
+.project__img {
+  width: 100%;
   border-radius: 8px;
 }
 
@@ -355,4 +359,140 @@ ul {
 .scroll-in {
   transform: translateY(0px);
   opacity: 1;
+}
+
+/* media query */
+@media screen and (min-width: 900px) and (max-width: 1100px) {
+  .project__title {
+    font-size: 1.4em;
+  }
+  .project__skills {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+  }
+  .project__function {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 899px) {
+  .home__title {
+    font-size: 2.2em;
+  }
+  .home__description {
+    font-size: 0.9em;
+  }
+  #skills {
+    padding: 7em 4em;
+  }
+  .project {
+    flex-direction: column;
+  }
+  .project:nth-child(even) {
+    flex-direction: column;
+  }
+  .project__link {
+    width: 100%;
+    margin: 0;
+  }
+  .project__img {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .project:nth-child(even) .project__img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .project__description {
+    margin-top: 1em;
+  }
+}
+
+@media screen and (max-width: 821px) {
+  #home {
+    flex-direction: column;
+  }
+  #skills {
+    padding: 5em;
+  }
+  .skills__container {
+    flex-direction: column;
+  }
+  #projects {
+    padding: 5em 0em;
+  }
+  .project__skills {
+    margin-bottom: 0.7em;
+  }
+  #contact {
+    padding: 5em 0em;
+  }
+}
+
+@media all and (max-width: 479px) {
+  .nav {
+    width: 90%;
+  }
+  .section__title {
+    font-size: 1.5em;
+  }
+  .section__description {
+    font-size: 0.7em;
+  }
+  #home {
+    padding: 5em 1em 6em 1em;
+  }
+  .home__title {
+    font-size: 1.8em;
+    margin: 0.5em 0;
+  }
+  .home__description {
+    width: 85%;
+    font-size: 0.9em;
+  }
+  #skills {
+    padding: 4em 0.7em;
+  }
+  .skills__list {
+    padding: 1.2em;
+  }
+  .skills__item {
+    font-size: 0.9em;
+    line-height: 1.5em;
+  }
+  #projects {
+    padding: 4em 0.7em;
+  }
+  .project {
+    margin-bottom: 2em;
+  }
+  .project__img {
+    width: 100%;
+  }
+  .project__title {
+    font-size: 1.2em;
+  }
+  .project__skills {
+    font-size: 1em;
+  }
+  .project__description {
+    padding: 0.5em;
+  }
+  .project__function {
+    font-size: 0.8em;
+  }
+  .section__email {
+    font-size: 1.1em;
+  }
+  .section__text {
+    font-size: 0.8em;
+    margin: 4px 0px;
+  }
+  .section__icons {
+    font-size: 1.5em;
+  }
+  #contact {
+    padding: 4em 2em;
+  }
 }
